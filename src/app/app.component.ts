@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 import { HeaderComponent } from './header/header.component';
@@ -10,7 +9,7 @@ import { DUMMY_USERS } from '../data/dummy-users';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule, HeaderComponent, UserComponent, TasksComponent],
+  imports: [CommonModule, HeaderComponent, UserComponent, TasksComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
